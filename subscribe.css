@@ -1,0 +1,59 @@
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    background: white;
+    height: 600px;
+    /* background-image: url("background.jpg"); */
+}
+
+.title{
+    /* top: 5%; */
+    position: relative;
+    color: rgba(0, 134, 74, .5);
+    font-size: 30px;
+}
+
+.subscribe{
+    display: block;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+.content inputs{
+    font-family: sans-serif;
+}
+
+.info {
+    font-size: 30px;
+    top: 5%;
+    position: relative;
+    display: block;
+    color: rgba(0, 134, 74, .5);
+}
+
+.why {
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+}
+
+.whySubscribe {
+    background-color: rgba(0, 134, 74, .2);
+    padding: 30px;
+}
+.head{
+    position: absolute;
+}
+
+@media screen and (max-width: 675px) {
+
+    .content{
+        height: 800px;
+
+    }
+}

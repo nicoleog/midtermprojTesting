@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Evergreen Apparel</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .allSlides{display: grid; grid-template-columns:1fr 1fr 1fr; width: 100%; height: 100%;}
+        .slides-wrapper{position: relative; }
+        .slides-wrapper img{width: 100%;}
+        .tree h2{background-image: url(tree.jpeg); padding: 10px; margin-bottom: 20px;font-size: 30px; color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+        
+    </style>
+    <script language="javascript">
+    pics1 = ["summer1.jpeg", "summer2.jpeg","summer3.jpeg"];
+    pics2 = ["summer4.jpeg", "summer5.jpeg","summer6.jpeg"];
+    pics3 = ["summer7.jpeg", "summer8.jpeg","summer9.jpeg"];
+    var picsIndex=0;
+    var picsIndex2=0;
+    var picsIndex3=0;
+    
+    $(document).ready(function() { slideShow(); slideShow2(); slideShow3(); })
+    function slideShow()
+    { $("#slide img").fadeTo(4000,1,nextSlide);}
+    function nextSlide()
+    {
+        picsIndex++;
+        picsIndex= picsIndex== pics1.length? 0: picsIndex;
+        $("#slide img").attr("src", pics1[picsIndex]);
+        $("#slide img").fadeIn(4000,slideShow);
+    }
+    function slideShow2()
+    { $("#slide2 img").fadeTo(4000,1,nextSlide2);}
+    function nextSlide2()
+    {
+        picsIndex2++;
+        picsIndex2= picsIndex2== pics2.length? 0: picsIndex2;
+        $("#slide2 img").attr("src", pics2[picsIndex2]);
+        $("#slide2 img").fadeIn(4000,slideShow2);
+    }
+    function slideShow3()
+    { $("#slide3 img").fadeTo(4000,1,nextSlide3);}
+    function nextSlide3()
+    {
+        picsIndex3++;
+        picsIndex3= picsIndex3== pics3.length? 0: picsIndex3;
+        $("#slide3 img").attr("src", pics3[picsIndex3]);
+        $("#slide3 img").fadeIn(4000,slideShow3);
+    }
+    
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</head>
+<body>
+
+    
+        
+        
+        <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <div class="wrapper">
+                <div class="topBar">
+              <a href="index.html"><img src="evergreenApparelLogo.png"></a>
+              <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
+              </div>
+              <div id="links">
+                  <a href="topsPage.html">Tops</a>
+                  <a href="bottomsPage.html">Bottoms</a>
+                  <a href="mission.html">Our Mission</a>
+                  <a href="reviews.html">Reviews</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="subscribe.html">Subscribe</a>
+              </div>
+
+              <a href="javascript:void(0);" class="thing" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+        </header>
+
+       <div class="content">
+           <br>
+          <div class = tree><h2> For every order you place, we plant a tree! </h2><div>
+         <div class=summerCollection>
+            <h3>Introducing</h3>
+            <h1>New Summer 2022 Collection</h1>
+            <h3>by Evergreen Apparel</h3>
+                <br>
+          
+        <div class=allSlides >
+           	<div class='slides-wrapper'>
+           		<div id='slide'><img src="summer1.jpeg" /></div>
+           	</div>
+            <div class='slides-wrapper'>
+             <div id='slide2'><img src="summer3.jpeg" /></div>
+            </div>
+            <div class='slides-wrapper'>
+             <div id='slide3'><img src="summer6.jpeg" /></div>
+            </div>
+         </div>  
+    
+         
+         <p>Limited Time Free Shipping And Returns</p>
+         <a href="topsPage.html">Shop Now</a>
+
+         <br>
+         </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class= "main-footer">
+             <p>Copyright &copy; 2021 Evergreen Apparel</p>
+        </footer>
+       </div>
+
+
+   
+</body>
+</html>

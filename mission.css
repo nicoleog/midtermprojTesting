@@ -1,0 +1,58 @@
+.content{
+    width: 100%;
+    top: 150px;
+    background: white;
+    height: 800px;
+}
+
+.title {
+    top: 3%;
+    position: relative;
+    display: block;
+    color: rgba(0, 134, 74, .5);
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+.imgText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionWords {
+    color: rgba(0, 134, 74, .85);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    width: 350px;
+    height: 10%;
+    display: inline-block;
+    position: relative;
+}
+
+.tropical {
+    display: inline-block;
+    padding-top: 20px;
+    position: relative
+}
+
+@media only screen and (max-width: 700px) {
+
+    .missionWords {
+        display: inline;
+    }
+
+    .tropical {
+        display: block;
+    }
+
+    .imgText {
+        display: block;
+    }
+    .content{
+        height: 1100px;
+    }
+}
+
+
